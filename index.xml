@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>iOS Portfolio</title>
+    <link>https://example.com/</link>
+    <description>Recent content on iOS Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 12 Apr 2017 11:14:48 -0400</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SoFA - Snap-on Finance App</title>
+      <link>https://example.com/post/sofa/</link>
+      <pubDate>Wed, 12 Apr 2017 11:14:48 -0400</pubDate>
+      
+      <guid>https://example.com/post/sofa/</guid>
+      <description>(SwiftUI)     App Store GitHub Repository &amp;ldquo;Private&amp;rdquo;  This app if fully created in UIKit.
+Focal points:  blablaa  </description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://example.com/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/contact/</guid>
+      <description>Contact me here: g.menegazzi.89@outlook.com.
+Follow me on these social media platforms
+   Platform URL     LinkedIn: https://nl.linkedin.com/in/giordano-menegazzi-35108012a   GitHub: https://github.com/Giordano-Menegazzi   YouTube: https://www.youtube.com/channel/UC-_X1GCGP54lD-9MUY4e2Nw    </description>
+    </item>
+    
+  </channel>
+</rss>
