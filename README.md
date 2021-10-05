@@ -44,7 +44,7 @@ This app if fully created in **SwiftUI** and **iOS 15**.
 
 
 
-#### ETCA 
+#### ETCA "EuroTech Center App"
 ###### (UIKit)
 
 ![](App Icon Border.png){:height="200px" width="200px"}         //NOG AANPASSEN plaatje toevoegen aan repository en hier linken
