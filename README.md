@@ -1,4 +1,4 @@
 # iOS Portfolio 
 
-##### Giordano Menegazzi
-###### iOS Developer
+## Giordano Menegazzi
+##### iOS Developer
