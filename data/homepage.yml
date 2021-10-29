@@ -1,0 +1,193 @@
+# homepage
+homepage:
+  head:
+    title: "Home | iOS Portfolio"
+
+
+# showcase
+showcase:
+  enable: true
+  title: "👋Hello, I’m Giordano."
+  subtitle: "iOS Developer"
+  description: "I'm a passionated, eager to learn and self taught iOS Developer with over 3 years experience.
+                Capable in working with both UIKit and SwiftUI.
+                Check Out the source code of my latest projects at <a target='_blank' href='https://github.com/Giordano-Menegazzi'>Github</a>."
+  image:
+    alt: "Showcase keyboard and mouse image"
+    x: "img/showcase/showcase.png"
+    _2x: "img/showcase/showcase@2x.png"
+  imageMobile:
+    alt: "Showcase keyboard and mouse image"
+    x: "img/showcase/showcase-mobile.jpg"
+  button:
+    icon: "icon-mail-fill"
+    btnText: "Contact"
+    URL: "mailto:g.menegazzi.89@outlook.com"
+  socialLinks:
+    - icon: "linkedin"
+      URL: "https://nl.linkedin.com/in/giordano-menegazzi-35108012a"
+    - icon: "github"
+      URL: "https://github.com/Giordano-Menegazzi"
+    - icon: "youtube"
+      URL: "https://www.youtube.com/channel/UC-_X1GCGP54lD-9MUY4e2Nw"
+    - icon: "instagram"
+      URL: "https://www.instagram.com/hannis.engineering/"
+    - icon: "facebook"
+      URL: "https://www.facebook.com/people/Hannis-Engineering/100063502239810/"
+
+
+# about
+about:
+  enable: true
+  title: "Who am I?"
+  content: '<p class="lead">
+    I am a passionated, eager to learn and self taught iOS Developer with a very wide range of different skills across multiple segments,
+    such as in Engineering, videography, science and electronics with both hardware and software knowledge.
+    </p>
+    <p class="lead">
+    This interest in different fields started at a very young age,
+    when I was just 5 years old and I got my very first dirt bike. And with it came my interest in mechanical engineering.
+    </p>'
+  button:
+    icon: "icon-arrow-right"
+    btnText: "Read more"
+    URL: "aboutMe.html"
+  image:
+    x: "img/who-am-i/Gio.png"
+    _2x: "img/who-am-i/Gio@2x.png"
+
+
+# education
+education:
+  enable: true
+  title: "Education"
+  items:
+    - university: "HAN University of Applied Sciences"
+      year: "2015-2020"
+      degree: "Bachelor of Applied Science (BASc), Automotive Engineering"
+    - university: "HAN University of Applied Sciences"
+      year: "2014-2015"
+      degree: "Preliminary Education for Bachelor of Applied Science (BASc)"
+
+
+# experience
+experience:
+  enable: true
+  title: "Experience"
+  description: "Very rich experience in all sort of different areas from hands-on Technician to software Developer."
+  button:
+    icon: "icon-linkedin-fill"
+    btnText: "Linkedin"
+    URL: "https://nl.linkedin.com/in/giordano-menegazzi-35108012a"
+  button2:
+    icon: "icon-profile-fill"
+    btnText: "Download My Resume"
+    URL: "resume/Curriculum Vitae-Giordano Menegazzi-2021.pdf"
+
+  items:
+    - title: "Electronical Prototype Developer"
+      company: "Autodidact"
+      duration: "Feb 2017 - Current"
+    - title: "Audi Technician"
+      company: "Audi Muntstad"
+      duration: "Jun 2010 - Feb 2017"
+    - title: "Volvo Mechanic"
+      company: "Volvo Broekhuis"
+      duration: "Jul 2006 - Jun 2010"
+
+
+# Client & Work
+client_and_work:
+  title: "iOS Apps"
+  enable: true
+
+  clients:
+    - logo:
+        x: "img/appLogos/AppLogoMiShoppingList60.png"
+        _2x: "img/appLogos/AppLogoMiShoppingList60@2x.png"
+      URL: "https://apps.apple.com/nl/app/mi-shopping-list/id1585217456?l=en"
+    - logo:
+        x: "img/appLogos/AppLogoETCA60.png"
+        _2x: "img/appLogos/AppLogoETCA60@2x.png"
+      URL: "https://apps.apple.com/nl/app/etc-app/id1464144641?l=en"
+    - logo:
+        x: "img/appLogos/AppLogoSoFA60.png"
+        _2x: "img/appLogos/AppLogoSoFA60@2x.png"
+      URL: "https://apps.apple.com/nl/developer/giordano-menegazzi/id1585217458?l=en"
+    - logo:
+        x: "img/appLogos/AppLogoEXandOs60.png"
+        _2x: "img/appLogos/AppLogoEXandOs60@2x.png"
+      URL: "https://apps.apple.com/nl/app/exandos/id1586866180?l=en"
+
+  works:
+    - title: "Mi Shopping List"
+      subtitle: "SwiftUI"
+      description: "Your personal shopping list, easy to use and customize. It's also possible to create To-Do lists or Notes! It's all up to you 😉"
+      button:
+        icon: "icon-arrow-right"
+        btnText: "See Details"
+        URL: "https://nl.linkedin.com/in/giordano-menegazzi-35108012a"
+      image:
+        x: "img/works/MiShoppingListShowcase.png"
+        _2x: "img/works/MiShoppingListShowcase@2x.png"
+      is_even: true
+    - title: "ETCA EuroTech Center App"
+      subtitle: "UIKit"
+      description: "The EuroTech Center App is the Swiss pocket knife for every car mechanic and is indispensable in daily work during diagnosis."
+      button:
+        icon: "icon-arrow-right"
+        btnText: "See Details"
+        URL: "https://nl.linkedin.com/in/giordano-menegazzi-35108012a"
+      image:
+        x: "img/works/ETCAshowcase.png"
+        _2x: "img/works/ETCAshowcase@2x.png"
+      is_even: false
+    - title: "SoFA Snap-on Finance App"
+      subtitle: "UIKit"
+      description: "Easily calculate the monthly costs of every Snap-on product including tax (Still in TestFlight)."
+      button:
+        icon: "icon-arrow-right"
+        btnText: "See Details"
+        URL: "https://nl.linkedin.com/in/giordano-menegazzi-35108012a"
+      image:
+        x: "img/works/SoFAshowcase.png"
+        _2x: "img/works/SoFAshowcase@2x.png"
+      is_even: true
+    - title: "eXandOs"
+      subtitle: "SwiftUI"
+      description: "The classic but very fun to play, Tic Tac Toe game. This is the very first 'Game' iOS app i created."
+      button:
+        icon: "icon-arrow-right"
+        btnText: "See Details"
+        URL: "https://nl.linkedin.com/in/giordano-menegazzi-35108012a"
+      image:
+        x: "img/works/eXandOsShowcase.png"
+        _2x: "img/works/eXandOsShowcase@2x.png"
+      is_even: false
+
+
+# contact
+contact:
+  enable: true
+  title: "Contact"
+  subtitle: "Contact me through one of these methods."
+
+  socialLinks:
+    - icon: "linkedin"
+      URL: "https://nl.linkedin.com/in/giordano-menegazzi-35108012a"
+    - icon: "github"
+      URL: "https://github.com/Giordano-Menegazzi"
+    - icon: "youtube"
+      URL: "https://www.youtube.com/channel/UC-_X1GCGP54lD-9MUY4e2Nw"
+    - icon: "instagram"
+      URL: "https://www.instagram.com/hannis.engineering/"
+    - icon: "facebook"
+      URL: "https://www.facebook.com/people/Hannis-Engineering/100063502239810/"
+
+  email:
+    title: "Email"
+    email: '<a href="mailto:g.menegazzi.89@outlook.com">g.menegazzi.89@outlook.com</a>'
+
+
+
+    ### END
