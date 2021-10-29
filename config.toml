@@ -1,7 +1,7 @@
 baseURL = "https://giordano-menegazzi.github.io/"
 languageCode = "en-us"
 theme = "raditian"
-canonifyURLs = "true"
+# canonifyURLs = "true"
 
 
 # Plugins
