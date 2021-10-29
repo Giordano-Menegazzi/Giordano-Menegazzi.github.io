@@ -1,0 +1,33 @@
+<!-- inject:../components/baseHead/baseHeadStart.html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{ partial "head.html" . }}
+    {{ partial "head_custom.html" . }}
+</head>
+
+<body>
+	{{ partial "header.html" . }}
+
+	{{ range .Site.Params.sections }}
+	{{ partial . $ }}
+	{{ end }}
+
+	{{ partial "footer.html" . }}
+  {{ partial "base-foot.html" . }}
+</body>
+
+</html>
+endinject -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example</title>
+    </head>
+    <body>
+        <p>This is an example of a simple HTML page with one paragraph.</p>
+    </body>
+</html>
