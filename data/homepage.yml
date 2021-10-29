@@ -7,7 +7,7 @@ homepage:
 # showcase
 showcase:
   enable: true
-  title: "👋Hello, I’m Giordano."
+  title: "👋Hello, I’m Giordano"
   subtitle: "iOS Developer"
   description: "I'm a passionated, eager to learn and self taught iOS Developer with over 3 years experience.
                 Capable in working with both UIKit and SwiftUI.
