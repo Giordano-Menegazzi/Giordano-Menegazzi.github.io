@@ -212,6 +212,16 @@
             transform: scaleY(1);
         }
     }
+
+    div.inline_tags h6, p{
+      text-align:left;
+      padding-right: 20px;
+      display: inline-block;
+    }
+
+    div.inline_tags{
+       text-align: left;
+    }
 </style>
 
 
@@ -443,30 +453,16 @@
       </div>
     </div>
 	  
-    <!-- inline tags styling -->
-    <style>
-	.inline_tags h6, .inline_tags p{
-	  text-align:left;
-	  padding-right: 20px;
-	  display: inline-block;
-	}
-	   
-	.inline_tags{
-	    text-align: left;
-	}
-     </style>
 	 
 	  
     <!-- iOS Apps section --> 
     <div class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row">
       <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto" id="mishoppinglist">
-        <h3>Mi Shopping List</h3>
-	      
+        <h3>Mi Shopping List</h3>  
 	<div class="inline_tags">
 	   <h6>SwiftUI</h6>
 	   <p>2021</p>
 	</div>
-        
         <p class="lead">
           Your personal shopping list, easy to use and customize. It&#39;s also possible to create To-Do lists or Notes! It&#39;s all up to you 😉
         </p>
@@ -497,7 +493,10 @@
       </div>
       <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
         <h3>ETCA EuroTech Center App</h3>
-        <h6>UIKit</h6>
+	<div class="inline_tags">
+	   <h6>UIKit</h6>
+	   <p>2018</p>
+	</div>
         <p class="lead">
           The EuroTech Center App is the Swiss pocket knife for every car mechanic and is indispensable in daily work during diagnosis.
         </p>
@@ -510,7 +509,10 @@
     <div class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row" id="sofa">
       <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
         <h3>SoFA Snap-on Finance App</h3>
-        <h6>UIKit</h6>
+        <div class="inline_tags">
+	   <h6>UIKit</h6>
+	   <p>2020</p>
+	</div>
         <p class="lead">
           Easily calculate the monthly costs of every Snap-on product including tax (Still in TestFlight).
         </p>
@@ -541,7 +543,10 @@
       </div>
       <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
         <h3>eXandOs</h3>
-        <h6>SwiftUI</h6>
+	<div class="inline_tags">
+	   <h6>SwiftUI</h6>
+	   <p>2021</p>
+	</div>
         <p class="lead">
           The classic but very fun to play, Tic Tac Toe game. This is the very first &#39;Game&#39; iOS app i created.
         </p>
