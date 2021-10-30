@@ -213,17 +213,36 @@
         }
     }
 
-    div.inline_tags h6, div.inline_tags p{
+    @media { 
+      hr {
+	padding-top: 30px;
+	height: 2px;
+      }   
+    }
+	
+    @media (max-width: 500px) { 
+      hr {
+	width: 100%;
+      }   
+    }
+	
+    @media (min-width: 501px) { 
+      hr {
+	width: 55%;
+      }   
+    }
+	
+    div.inline_tags h6, div.inline_tags p {
       text-align:left;
       padding-right: 20px;
       display: inline-block;
     }
 	
-    div.bottom_tags{
+    div.bottom_tags {
        padding-bottom: 30px;
     }
 
-    div.inline_tags{
+    div.inline_tags {
        text-align: left;
     }
 </style>
@@ -386,7 +405,7 @@
     </div>
   </div>
 </section>
-<hr style="width: 60%;height: 2px;padding-top: 30px;">
+<hr>
 
 
 	
