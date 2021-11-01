@@ -243,7 +243,7 @@
       list-style-type: "✔";
     }
 	
-    li.circle-checkmark::before {
+    li.circle-checkmark {
       content: ""; 
       position: absolute; 
       left: 0; 
@@ -252,9 +252,8 @@
       border-radius: 8px;
     }
 	
-    div.list_top_padding ul li {
+    div.list_top_padding {
       padding-top: 30px;
-      list-style-type: "---";
     }
 </style>
 
@@ -420,7 +419,7 @@
 	    <div class="col-12 col-sm-6 mb-4 mb-sm-0">
 	      <div class="programming">
 		<h5>Programming</h5>
-		<ul>
+		<ul class="circle-checkmark">
 		  <li><h6>Swift</h6> Over 3 years experience of building native iOS apps.</li>
 		  <li><h6>C</h6> My Minor of B.S. was Vehicle Electronics which contains C programming.</li>
 		  <li><h6>HTML</h6> Created this website with HTML.</li>
