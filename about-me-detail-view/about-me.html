@@ -240,7 +240,11 @@
     }
 	
     ul {
-      list-style-type: square;
+      list-style: none;
+    }
+
+    ul li:before {
+      content: '✓';
     }
 	
     div.list_top_padding {
