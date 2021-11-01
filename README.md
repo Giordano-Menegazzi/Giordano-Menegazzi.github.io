@@ -2,7 +2,7 @@
 
 <img src="img/who-am-i/Gio.png" width="300">
 
-### Hi 👋, I'm Giordano Menegazzi
+### 👋 Hello, I'm Giordano Menegazzi
 ###### iOS Developer - Engineer - YouTuber
 
 This is my iOS portfolio, the full website can be viewed at [https://giordano-menegazzi.github.io/](https://giordano-menegazzi.github.io/).
