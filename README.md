@@ -1,6 +1,6 @@
 # iOS Portfolio
 
-<img src="img/who-am-i/Gio.png" width="300" height="300">
+<img src="img/who-am-i/Gio.png" width="300">
 
 ### Giordano Menegazzi
 ###### iOS Developer
