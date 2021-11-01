@@ -213,6 +213,14 @@
         }
     }
 	
+    .rotate180 {
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+	
     a.btn-primary {
       border-radius: 500px;    
     }
@@ -612,8 +620,9 @@
 	   <h6>AppStorage</h6>
 	   <h6>MVVM</h6>
 	</div>
-        <a href="app-detail-views/exandos.html" class="btn btn-primary"
-          >See Details<i class="icon-arrow-right"></i>
+        <a href="app-detail-views/exandos.html" class="btn btn-primary">
+	   See Details
+	   <i class="icon-arrow-right rotate180"></i>
 	</a>
       </div>
     </div>
