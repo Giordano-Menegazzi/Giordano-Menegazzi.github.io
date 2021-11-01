@@ -243,8 +243,18 @@
       list-style-type: "✔";
     }
 	
+    li.circle-checkmark::before {
+      content: ""; 
+      position: absolute; 
+      left: 0; 
+      top: 2px; 
+      border: solid 8px #f9dd94;
+      border-radius: 8px;
+    }
+	
     ul.list_top_padding {
       padding-top: 30px;
+      list-style-type: "✔";
     }
 </style>
 
