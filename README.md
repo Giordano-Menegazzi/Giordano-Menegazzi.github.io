@@ -2,10 +2,10 @@
 
 <img src="img/who-am-i/Gio.png" width="300">
 
-### Giordano Menegazzi
-###### iOS Developer
+### Hi 👋 I'm Giordano Menegazzi
+###### iOS Developer - Engineer - YouTuber
 
-This iOS portfolio website can be viewed at [https://giordano-menegazzi.github.io/](https://giordano-menegazzi.github.io/).
+This is my iOS portfolio, the full website can be viewed at [https://giordano-menegazzi.github.io/](https://giordano-menegazzi.github.io/).
 Here you can see all iOS apps I created, all apps are fully programmatically created and documented here on my github page [GitHub](https://github.com/Giordano-Menegazzi) as well.
 This iOS portfolio website is created with the free [GoHugo](https://gohugo.io/) website template from [Radity](https://radity.com/).
 
