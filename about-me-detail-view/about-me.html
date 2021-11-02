@@ -271,6 +271,36 @@
       padding-top: 30px;
     }
 </style>
+	
+<!-- CSS list style -->	
+<style>
+  ul.checkmark_list {
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    li {
+      position:relative;
+      padding:10px 0;
+      cursor:pointer;
+      &:before {
+        position: absolute;
+        top: 50%;
+        left: -20px;
+        width: 12px;
+        height: 12px;
+        content: '\2714';
+        transition: all 0.3s;
+        background-position: center;
+        background-size:cover;
+        transform: translateY(-50%);
+    }
+    &:hover {
+      &:before {
+        left:-15px;
+      }
+    }
+  }
+}
+</style>
 
 
 <link rel="stylesheet" href="https://giordano-menegazzi.github.io/css/main.css"/>
@@ -443,7 +473,7 @@
 	    <div class="col-12 col-sm-6 mb-4 mb-sm-0">
 	      <div class="programming">
 		<h5>Programming</h5>
-		<ul class="thin_header">
+		<ul class="thin_header checkmark_list">
 		   <li><h6>Swift</h6> Over 3 years experience of building native iOS apps with both UIKit and SwiftUI.</li>
 		   <li><h6>C</h6> Microcontroller programming for Autodidact and during studies.</li>
 		   <li><h6>HTML</h6> Created this website in HTML.</li>
