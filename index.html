@@ -222,6 +222,7 @@
     }
 	
     div.floating_box {
+	display: inline-block;
 	border-radius: 10px;
 	text-align: left;
 	box-shadow: 3px 3px 3px #999;
@@ -534,7 +535,9 @@
       <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto" id="mishoppinglist">
         <h3>Mi Shopping List</h3>  
 	<div class="inline_tags">
-	   <div class="floating_box"><h6>SwiftUI</h6></div>
+	   <div class="floating_box">
+	      <h6>SwiftUI</h6>
+	   </div>
 	   <p>2021</p>
 	</div>
         <p class="lead">
@@ -542,11 +545,21 @@
 	  The possibilities are endless, it's all up to you 😉.
         </p>
 	<div class="inline_tags bottom_tags">
-	   <h6>CoreData</h6>
-	   <h6>CloudKit</h6>
-	   <h6>MVVM</h6>
-	   <h6>GoogleMobileAds</h6>
-	   <h6>AppTrackingTransparency</h6>
+	   <div class="floating_box">
+	      <h6>CoreData</h6>
+	   </div>
+	   <div class="floating_box">
+	      <h6>CloudKit</h6>
+	   </div>
+	   <div class="floating_box">
+	      <h6>MVVM</h6>
+	   </div>
+	   <div class="floating_box">
+	      <h6>GoogleMobileAds</h6>
+	   </div>
+	   <div class="floating_box">
+	      <h6>AppTrackingTransparency</h6>
+	   </div>
 	</div>
         <a href="app-detail-views/mi-shopping-list.html" class="btn btn-primary arrow_btn">
 	   See Details
