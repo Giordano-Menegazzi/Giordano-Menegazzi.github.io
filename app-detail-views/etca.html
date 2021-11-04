@@ -364,11 +364,11 @@
 	  </p>
 	  <p class="lead">
 	     The idea for this app was to create the 'Swiss pocket knife' for every car mechanic in name of the automotive Helpdesk
-	     <a href="https://eurotechcenter.eu/en/">EuroTech Center</a> (which is a different department of Autodidact itself).
+	     <a href="https://eurotechcenter.eu/en/">EuroTech Center</a>.
 	  </p>
 	  <p class="lead">
-	     The app consists of multiple smaller standalone apps that we call 'App Tools'. These App Tools range from case specific calculators, 
-	     like the VE-MAF and Ohms Law Calculators to custom QR code scanners.
+	     The app consists of several smaller standalone apps that we call 'App Tools'. These App Tools range from case-specific calculators,
+             such as the VE-MAF and Ohms Law Calculators to custom QR code scanners.
 	  </p>
       </div>
       <div class="col-12 col-md-7 pl-md-0 text-right">
@@ -400,12 +400,11 @@
 		  Requirements</h5>
 		</div>
 		<ul class="thin_header">
-		   <li><h6>Basic Structure</h6> The app is build upon a custom 'basic structure' that enables the app to house multiple smaller 
-			                        standalone apps.</li>
-		   <li><h6>Scalable</h6> The app scales automatically using AutoLayout and device/platform dependend flexible sizes 
-			                        to every iPhone and iPad.</li>
-		   <li><h6>///</h6> ///////</li>
-		   <li><h6>////</h6> /////////</li>
+		   <li><h6>Basic Structure</h6> The app is built on a custom 'basic structure' that allows the app to contain several smaller standalone apps.</li>
+		   <li><h6>Scalable</h6> The app automatically scales to any iPhone and iPad using AutoLayout.</li>
+		   <li><h6>Reusable</h6> Used the 'DRY' principle and inheritance to make every view and component reusable.</li>
+		   <li><h6>Hexadecimal Keyboard</h6> Created a custom hexadicmal input view for the native keyboard, using the original color and sounds.</li>
+		   <li><h6>Dark Mode Support</h6> At the time, dark mode became available on iPhone and iPad, so it was necessary to support both.</li>
 		</ul>
 	      </div>   
 	    </div>
@@ -418,9 +417,12 @@
 		</div>
 	        <ul class="thin_header">
 		   <li><h6>UIKit</h6> 100% programmatically designed with UIKit.</li>
-		   <li><h6>UserDefaults</h6> Blablbvalaaa</li>
-		   <li><h6>MessageUI</h6> Used in every app to contact the developer through the native mail app.</li>
-		   <li><h6>GoogleMobileAds</h6> Used to implement the AdMob SDK.</li>
+		   <li><h6>PhotosUI</h6> Used the singleton pattern to create a reusable NSObject that allows the user to choose photos from his library or take a photo.</li>
+		   <li><h6>MessageUI</h6> Allowing the user to send emails with the native mail app.</li>
+		   <li><h6>AVFoundation</h6> Created a custom 2D and 3D code scanner to scan barcodes, QR codes and Data matrixes.</li>
+		   <li><h6>RxSwift</h6> Experimented with this framework to make the app more reactive.</li>
+		   <li><h6>CoreTelephony</h6> Enabeled the users to directly call the helpdesk 'EuroTech center'.</li>
+		   <li><h6>SafariServices</h6> Allowing the user to perform a 'Google search' directly from the P-code app tool.</li>
 	        </ul>
 	      </div> 
 	    </div> 
@@ -443,17 +445,17 @@
         <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
 	  <h2>What I've Learned</h2>
           <p class="lead">
-             I've learned to programmatically use AutoLayout and build apps with UIKit. This app basically consists of multiple standalone apps, so I've 
-	     learned to build a layout that houses all these standalone apps and can easily be updated in the future. 
+             I learned to use AutoLayout programmatically and build apps with UIKit. This app is basically made up of several standalone apps, 
+	     so I learned to build a layout that accommodates all of these standalone apps and can be easily updated/extended in the future. 
 	  </p>
 	  <p class="lead">
-             I also learned to build the app with the best user experience in mind, meaning I only enable certain functionalities based on the data provided.
-             For example, do not allow the user to calculate in the calculators until all data has been entered, show error messages accordingly 
-	     and use animations when values change.
+             I also learned to build the app with the best user experience in mind, meaning I only enable certain functionalities based on the data filled in.
+             For example, do not allow the user to calculate in the calculators until all data is entered, show corresponding error messages 
+	     and additionally use animations when values change.
 	  </p>
 	  <p class="lead">
-             Since this whas the first app I created, it was also the first app I uploaded to the App Store. So I've leardned how to archive and upload 
-	     the app for review and show it in the App Store as well.
+             Since this was the first app I made, it was also the first app I uploaded to the App Store. So I learned how to archive and upload
+             the app for review and also show it in the App Store afterwards.
 	  </p>
         </div>
       </div>
