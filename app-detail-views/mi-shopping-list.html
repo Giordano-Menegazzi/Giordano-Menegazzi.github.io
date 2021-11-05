@@ -257,11 +257,6 @@
     .download_btn {
        width: 250px; 
        margin-left: 20px;
-       background:transparent url('https://giordano-menegazzi.github.io/img/general/black.svg') center top no-repeat;
-    }
-	
-    .download_btn:hover { 
-      background-image: url('https://giordano-menegazzi.github.io/img/general/white.svg');
     }
 	
     @media screen and (min-width: 991px) {   
@@ -539,8 +534,25 @@
 	     Alternatively you can search the App store for <strong>Mi Shopping List</strong> or <strong>Giordano Menegazzi</strong> or use the button below.  
 	  </p>
 	  <a href="https://apps.apple.com/nl/app/etc-app/id1464144641?l=en" class="download_btn">
-	     <!--<img src="https://giordano-menegazzi.github.io/img/general/black.svg" 
-	     alt="Mi Shopping List Download Btn">-->
+	     <img src="https://giordano-menegazzi.github.io/img/general/black.svg"
+	     onmouseover="this.src='https://giordano-menegazzi.github.io/img/general/white.svg'"
+	     onmouseout="this.src='https://giordano-menegazzi.github.io/img/general/black.svg'"
+	     alt="Mi Shopping List Download Btn">
+		  
+   <!--	<a href="TARGET URL GOES HERE"><img src="URL OF FIRST IMAGE GOES HERE" 
+	onmouseover="this.src='URL OF IMAGE ON HOVER GOES HERE'"
+	onmouseout="this.src='URL OF FIRST IMAGE GOES HERE AGAIN'" /></A>
+
+
+.download_btn {
+       width: 250px; 
+       margin-left: 20px;
+       background:transparent url('https://giordano-menegazzi.github.io/img/general/black.svg') center top no-repeat;
+    }
+	
+    .download_btn:hover { 
+      background-image: url('https://giordano-menegazzi.github.io/img/general/white.svg');
+    }-->
 	  </a> 
         </div>
         <div class="col-12 col-md-7 pl-md-0">
