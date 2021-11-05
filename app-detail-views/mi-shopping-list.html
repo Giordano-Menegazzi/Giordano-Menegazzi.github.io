@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,6 +27,9 @@
 
 
 <title></title>
+	
+	
+<!-- CSS Styles -->
 <style>
     .rad-fade-in {
         will-change: opacity, transform;
@@ -211,7 +215,119 @@
             transform: scaleY(1);
         }
     }
+	
+    .title {
+      margin-top: 80px;
+    }
+	
+    .title a:hover {
+      transform: scale(1.1);    
+    }
+	
+    .title a:link {
+      text-decoration: none;
+    }
+
+    .title img {
+      vertical-align: middle;
+      width: 60px;
+    }
+
+    .title h1 {
+      display: inline;
+      margin-left: 20px;
+      vertical-align: middle;
+      font-size: 3em;
+      font-family: SignPainter;
+    }
+	
+    .rotate180 {
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
+      padding-left: 6px;
+    }
+	
+    a.back_btn {
+      padding-right: 25px;	    
+    }
+	
+    .download_btn {
+       width: 250px; 
+       margin-left: 20px;
+    }
+	
+    @media screen and (min-width: 991px) {   
+       div.footer_links_padding {
+         padding-left: 10px;
+       }
+	    
+       .title img {
+         width: 120px;
+       }
+	    
+       .title h1 {
+         font-size: 4em;
+       }
+    }
+	
+    a.btn-primary, a.btn-frameless {
+      border-radius: 500px;    
+    }
+	
+    a.btn-frameless {
+      border: 1px solid black;
+      margin-left: 10px;
+    }
+	
+    a.btn-frameless:hover {
+      background: #000;
+      color: #fff;
+    }
+	
+    #background {
+      margin-top: 30px;	    
+    }
+	
+    #skills {
+      margin-top: -50px;
+    }
+	
+    hr.seperator_bottom {
+      padding-top: 30px;
+      height: 2px;
+    }
+    
+    div.bottom_padding h2 {
+      padding-bottom: 30px;	    
+    }
+	
+    .list_header img {
+      margin-right: 5px;
+      width: 60px;
+    }
+	
+    ul.thin_header li h6 {
+      font-weight: 500;  
+      margin-bottom: 2px;
+    }
+	
+    div.list_top_padding {
+      margin-top: 25px;
+    }
+	
+    div.floating_box {
+      border-radius: 16px;
+      box-shadow: 3px 3px 3px #999;
+      padding: 15px;
+      border: 1px solid #999;
+      text-align: left;
+    }
 </style>
+	
+
 
 
 <link rel="stylesheet" href="https://giordano-menegazzi.github.io/css/main.css"/>
@@ -243,26 +359,33 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-lg-auto">
-		
           <li class="nav-item">
-            <a class="nav-link" href="https://giordano-menegazzi.github.io/#portfolio">HOME</a>
+            <a class="nav-link" href="https://giordano-menegazzi.github.io/#mishoppinglist">HOME</a>
           </li>  
 		
 	  <li class="nav-item">
-            <a data-scroll class="nav-link" href="#mishoppinglist"
-              >MI SHOPPING LIST</a>
-          </li>
-          
-          <li class="nav-item">
-            <a data-scroll class="nav-link" href="#interests"
-              >INTERESTS</a>
-          </li>
-          
-          <li class="nav-item">
-            <a data-scroll class="nav-link" href="#future"
-              >FUTURE</a>
+            <a data-scroll class="nav-link" href="#background">BACKGROUND</a>
           </li>
 		
+	  <li class="nav-item">
+            <a data-scroll class="nav-link" href="#focalPoints">FOCAL POINTS</a>
+          </li>
+		
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#learned">WHAT I'VE LEARNED</a>
+          </li>
+		
+	  <li class="nav-item">
+            <a data-scroll class="nav-link" href="#future">FUTURE FEATURES</a>
+          </li>
+		
+	  <li class="nav-item">
+            <a data-scroll class="nav-link" href="#download">DOWNLOAD</a>
+          </li>
+		
+	  <li class="nav-item">
+            <a data-scroll class="nav-link" href="https://giordano-menegazzi.github.io/#footer">CONTACT</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -271,141 +394,243 @@
 	
 	
 	
-<!-- Mi Shopping List --> 
-<section class="section section--border-bottom" id="mishoppinglist">
-  <div class="container">	  
+<!-- Background section -->
+<section class="section section--border-bottom" id="background">
+  <div class="container">  
+    <!-- Title -->
+    <center class="title rad-animation-group rad-fade-down">
+      <a href="https://apps.apple.com/nl/app/etc-app/id1464144641?l=en">
+        <img src="https://giordano-menegazzi.github.io/img/appLogos/ETCAlogo512.png" 
+           alt="Mi Shopping List icon">
+        <h1>Mi Shopping List</h1>
+      </a>
+    </center>
+	
+    <div class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row">
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h2>Background</h2>
+	  <p class="lead">
+	     blablablaaa
+	  </p>
+	  <p class="lead">
+	     blablablaaa
+	  </p>
+	  <p class="lead">
+	     blablablaaa
+	  </p>
+      </div>
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+         <img
+           class='lozad img-responsive'
+           src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+           data-src="https://giordano-menegazzi.github.io/img/works/ETCA/ETCAscreenshots.png"
+           data-srcset="https://giordano-menegazzi.github.io/img/works/ETCA/ETCAscreenshots.png 1x, https://giordano-menegazzi.github.io/img/works/ETCA/ETCAscreenshots@2x.png 2x"
+           alt="Mi Shopping List Screenshots"
+         /> 
+      </div>
+    </div>
+  </div>
+</section>
+	
+	
+	
+<!-- Focal Points section -->
+<section class="section section--border-bottom" id="focalPoints">
+  <div class="container">
       <div class="row row--padded rad-animation-group rad-fade-down">
-	<div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
-          <h3>Mi Shopping List</h3>
-          <p class="lead">
-            I am a passionated, eager to learn and self taught iOS Developer with a very wide range of different skills across multiple segments,
-	        such as in Engineering, videography, science and electronics with both hardware and software knowledge.
-          </p>
-        </div>
-        <div class="col-12 col-md-7 pl-md-0 text-right">
-          <img
-            class='lozad img-responsive img-clip-left-backward'
-            src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
-            data-src="https://giordano-menegazzi.github.io/img/who-am-i/Gio.png"
-            data-srcset="https://giordano-menegazzi.github.io/img/who-am-i/Gio.png 1x, https://giordano-menegazzi.github.io/img/who-am-i/Gio@2x.png 2x"
-            alt="Profile Picture"
-          />
-        </div>
-      </div> 
+	<div class="col-12">
+	  <h2>Focal Points</h2>
+	  <div class="row pt-2 pt-md-4">
+	    <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+	      <div class="floating_box">
+		<div class="list_header"> 
+		  <h5><img src="https://giordano-menegazzi.github.io/img/skills/programming_icon.png" alt="Programming icon">
+		  App Requirements</h5>
+		</div>
+		<ul class="thin_header">
+		   <li><h6>blablablaaa</h6> blablablaaa</li>
+		   <li><h6>blablablaaa</h6> blablablaaa</li>
+		   <li><h6>blablablaaa</h6> blablablaaa</li>
+		</ul>
+	      </div>   
+	    </div>
+		  
+	    <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+	      <div class="floating_box">
+		<div class="list_header">
+		  <h5><img src="https://giordano-menegazzi.github.io/img/skills/swift_framework_icon.png" alt="Software icon">
+		  Used Frameworks</h5>
+		</div>
+	        <ul class="thin_header">
+		   <li><h6>SwiftUI</h6> 100% programmatically designed with SwiftUI.</li>
+		   <li><h6>blablablaaa</h6> blablablaaa</li>
+		   <li><h6>MessageUI</h6> Allowing the user to send emails with the native mail app.</li>
+		   <li><h6>blablablaaa</h6> blablablaaa</li>
+	        </ul>
+	      </div> 
+	    </div> 
+          </div>
+        </div>   
+      </div>
+      <hr class="seperator_bottom">
 	  
-      <div class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row" id="interests">
+      <!-- What I've learned section -->
+      <div class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row" id="learned">
         <div class="col-12 col-md-7 pl-md-0 text-right">
           <img
-	        class='lozad img-responsive img-clip-right-forward'
+	    class='lozad img-responsive'
             src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
-            data-src="https://giordano-menegazzi.github.io/img/who-am-i/Gio.png"
-            data-srcset="https://giordano-menegazzi.github.io/img/who-am-i/Gio.png 1x, https://giordano-menegazzi.github.io/img/who-am-i/Gio@2x.png 2x"
-            alt="Profile Picture"
+            data-src="https://giordano-menegazzi.github.io/img/works/ETCA/ETCAscreenshots.png"
+            data-srcset="https://giordano-menegazzi.github.io/img/works/ETCA/ETCAscreenshots.png 1x, https://giordano-menegazzi.github.io/img/works/ETCA/ETCAscreenshots@2x.png 2x"
+            alt="Mi Shopping List Screenshots"
           />
         </div>
         <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
-          <h3>Interests</h3>
+	  <h2>What I've Learned</h2>
           <p class="lead">
-	        This interest in different fields started at a very young age,
-	        when I was just 5 years old and I got my very first dirt bike. And with it came my interest in mechanical engineering.
-            The EuroTech Center App is the Swiss pocket knife for every car mechanic and is indispensable in daily work during diagnosis.
-          </p>
+             blablablaaa 
+	  </p>
+	  <p class="lead">
+             blablablaaa
+	  </p>
+	  <p class="lead">
+             blablablaaa
+	  </p>
         </div>
       </div>
+      <hr class="seperator_bottom">
 	  
-      <div class="row row--padded rad-animation-group rad-fade-down" id="future">
-	<div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
-      <h3>Future</h3>
-      <p class="lead">
-	    This actually kickstarted my career as a car mechanic at the Audi dealer (for 11 years),
-	    eventually I felt like I could learn more and pursue my interest in electronics, so I decided to make a career switch.
-	    To do so I started studying at HAN University of Applied Sciences.
+      <!-- Future Features section -->
+      <div class="bottom_padding rad-animation-group rad-fade-down" id="future">
+        <h2>Future Features</h2>
+        <div class="floating_box">
+	  <div class="list_header"> 
+	    <h5><img src="https://giordano-menegazzi.github.io/img/skills/future-idea-icon.png" alt="Future idea icon">
+	    New Ideas / Improvements</h5>
+	  </div>
+	  <ul class="thin_header">
+	     <li><h6>blablablaaa</h6> blablablaaa</li>
+	     <li><h6>blabla</h6> baldieblaadieblaaaaa.</li>
+	  </ul>
+        </div>  
+      </div> 
+    </div>
+</section>
+
+
+
+<!-- Download section -->  
+<section class="section section--border-bottom rad-animation-group" id="download">
+    <div class="container">
+      <div class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row">
+        <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto bottom_padding">
+	  <h2>Download</h2>
+	  <p class="lead">
+	     Scan the QR code to download the app.  
 	  </p>
-	
-	  <a href="https://giordano-menegazzi.github.io/#portfolio" class="btn btn-primary"
-	      <i class="icon-arrow-right"></i>
-	      BACK
-	  </a>
+	  <p class="lead">
+	     Alternatively you can search the App store for <strong>Mi Shopping List</strong> or <strong>Giordano Menegazzi</strong> or use the button below.  
+	  </p>
+	  <a href="https://apps.apple.com/nl/app/etc-app/id1464144641?l=en" class="download_btn">
+	     <img src="https://giordano-menegazzi.github.io/img/general/black.svg" 
+	     alt="Mi Shopping List Download Btn">
+	  </a> 
         </div>
         <div class="col-12 col-md-7 pl-md-0 text-right">
-          <img
-            class='lozad img-responsive img-clip-left-forward'
-            src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
-            data-src="https://giordano-menegazzi.github.io/img/who-am-i/Gio.png"
-            data-srcset="https://giordano-menegazzi.github.io/img/who-am-i/Gio.png 1x, https://giordano-menegazzi.github.io/img/who-am-i/Gio@2x.png 2x"
-            alt="Profile Picture"
-          />
+	  <img
+	     class='lozad img-responsive'
+	     src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+	     data-src="https://giordano-menegazzi.github.io/img/general/qr-code-mi-shopping-list.jpg"
+	     data-srcset="https://giordano-menegazzi.github.io/img/general/qr-code-mi-shopping-list.jpg 1x, https://giordano-menegazzi.github.io/img/general/qr-code-mi-shopping-list.jpg 2x"
+	     alt="Mi Shopping List Download QR code"
+	   /> 
+        </div>
+      </div>
+	    
+      <!-- Download & Back button -->
+      <div class="container rad-animation-group rad-fade-down">
+        <div class="row flex-column-reverse flex-md-row rad-fade-down">
+          <div class="col-12 col-sm-6 mt-5 mt-sm-0">
+	    <a href="https://giordano-menegazzi.github.io/#mishoppinglist" class="btn btn-primary back_btn">
+	       <i class="icon-arrow-right rotate180"></i>
+	       BACK
+	    </a>
+          </div>   
         </div>
       </div>
     </div>
 </section>
-	
 
+	
 	
 <!-- Footer section -->
-<footer class="footer">
+<footer class="footer" id="footer">
+  <!-- First layer Social links -->
   <div class="container">
-     <div class="footer__left">
+     <div class="footer__left footer_links_padding">
        <div class="row pt-2">
          <div class="row platform-links">
-           <div class="col-12"> 
-              <a href="https://nl.linkedin.com/in/giordano-menegazzi-35108012a" target="_blank"
-                ><i class="icon-linkedin-line"></i>
-              </a>
+	   <div class="col-12"> 
+	      <a href="https://nl.linkedin.com/in/giordano-menegazzi-35108012a" target="_blank">
+		 <i class="icon-linkedin-line"></i>
+	      </a>
 
-              <a href="https://github.com/Giordano-Menegazzi" target="_blank"
-                ><i class="icon-github-line"></i>
-              </a>
+	      <a href="https://github.com/Giordano-Menegazzi" target="_blank">
+		 <i class="icon-github-line"></i>
+	      </a>
 
-              <a href="https://www.youtube.com/channel/UC-_X1GCGP54lD-9MUY4e2Nw" target="_blank"
-                ><i class="icon-youtube-line"></i>
-              </a>
+	      <a href="https://www.youtube.com/channel/UC-_X1GCGP54lD-9MUY4e2Nw" target="_blank">
+		 <i class="icon-youtube-line"></i>
+	      </a>
 
-              <a href="https://www.instagram.com/hannis.engineering/" target="_blank"
-                 ><i class="icon-instagram-line"></i>
-              </a>
+	      <a href="https://www.instagram.com/hannis.engineering/" target="_blank">
+		 <i class="icon-instagram-line"></i>
+	      </a>
 
-              <a href="https://www.facebook.com/people/Hannis-Engineering/100063502239810/" target="_blank"
-                 ><i class="icon-facebook-line"></i>
-              </a>
-            </div>
-          </div>
+	      <a href="https://www.facebook.com/people/Hannis-Engineering/100063502239810/" target="_blank">
+		 <i class="icon-facebook-line"></i>
+	      </a>
+	    </div>
+	  </div>
         </div>
       </div>
     </div>
+
+  <!-- Second footer layer -->
   <div class="container">	  
-    <div class="footer__left">	    
+    <div class="footer__left">		    
       <div class="footer__copy">
         © Hanni&#39;s Engineering. All rights reserved.
       </div>
     </div>
-	  
+
     <div class="footer__links">
-      <ul class="navbar-nav ">
-        <li class="nav-item">
-          <a class="nav-link" href="https://giordano-menegazzi.github.io/#portfolio">HOME</a>
+      <ul class="navbar-nav ">	      
+	<li class="nav-item">
+           <a class="nav-link" href="https://giordano-menegazzi.github.io/#mishoppinglist">HOME</a>
         </li>
 	      
 	<li class="nav-item">
-          a data-scroll class="nav-link" href="#header">ETCA</a>
+           <a data-scroll class="nav-link" href="#header">Mi Shopping List</a>
         </li>   
       </ul>
     </div>
 	  
     <div class="footer__right">
-      <a href="https://www.youtube.com/channel/UC-_X1GCGP54lD-9MUY4e2Nw"
-        ><img
-	      src="https://giordano-menegazzi.github.io/img/footer/Logo-Outlines-White.png"
-	      srcset="https://giordano-menegazzi.github.io/img/footer/Logo-Outlines-White.png 1x, https://giordano-menegazzi.github.io/img/footer/Logo-Outlines-White@2x.png 2x"
-	      alt=""
+      <a href="https://www.youtube.com/channel/UC-_X1GCGP54lD-9MUY4e2Nw">
+        <img
+	   src="https://giordano-menegazzi.github.io/img/footer/Logo-Outlines-White.png"
+	   srcset="https://giordano-menegazzi.github.io/img/footer/Logo-Outlines-White.png 1x, https://giordano-menegazzi.github.io/img/footer/Logo-Outlines-White@2x.png 2x"
+	   alt=""
        /></a>
     </div> 
+	  
   </div>
 </footer>
 	
-	
 
-	
+
+<!-- Scripts -->
 <script src='https://giordano-menegazzi.github.io/js/rad-animations.js'></script>
 <script src='https://giordano-menegazzi.github.io/js/library/lozad.min.js'></script>
 <script>
