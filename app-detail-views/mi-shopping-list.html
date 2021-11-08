@@ -457,9 +457,15 @@
 		  App Requirements</h5>
 		</div>
 		<ul class="thin_header">
-		   <li><h6>blablablaaa</h6> blablablaaa</li>
-		   <li><h6>blablablaaa</h6> blablablaaa</li>
-		   <li><h6>blablablaaa</h6> blablablaaa</li>
+		   <li><h6>Create Shops</h6> The option to create multiple custom shops.</li>
+		   <li><h6>Create Articles</h6> The option to create articles in a particular shop.</li>
+		   <li><h6>Select Articles</h6> Every article has a checkbox.</li>
+		   <li><h6>Hide Unselected Articles</h6> One toggle to easily hide all unselected articles.</li>
+		   <li><h6>Rearange Articles</h6> Drag and drop to move items in the list.</li>
+		   <li><h6>Search Articles</h6> Added a search bar to quickly find items in the list.</li>
+		   <li><h6>Edit existing Article or Shop</h6> Every article and shop can be editted.</li>
+		   <li><h6>Emojis</h6> An emoji can be added to each article.</li>
+		   <li><h6>Show Advertisements</h6> The app may show advertisements in a banner at the bottom of the screen.</li>
 		</ul>
 	      </div>   
 	    </div>
@@ -472,9 +478,15 @@
 		</div>
 	        <ul class="thin_header">
 		   <li><h6>SwiftUI</h6> 100% programmatically designed with SwiftUI.</li>
-		   <li><h6>blablablaaa</h6> blablablaaa</li>
+		   <li><h6>CoreData</h6> The app uses coreData to store all shops and articles with a parent/child relationship.</li>
+		   <li><h6>PhotosUI</h6> Used the singleton pattern to create a reusable NSObject that allows the user to choose photos 
+			   from his library or take a photo.</li>
 		   <li><h6>MessageUI</h6> Allowing the user to send emails with the native mail app.</li>
-		   <li><h6>blablablaaa</h6> blablablaaa</li>
+		   <li><h6>GoogleMobileAds</h6> Used to implement the Google AdMob SDK.</li>
+		   <li><h6>AppTrackingTransparency</h6> AdMob uses tracking for ads, so I implemented tracking transparency (mandatory since iOS 14.5).</li>
+		   <li><h6>AdSupport</h6> To run AdMob mobile ads, I implemented a banner ad at the bottom of the screen.</li>
+		   <li><h6>@AppStorage</h6> Used to store small data like the toggle state to hide all unselected articles.</li>
+		   <li><h6>@Environment</h6> The @Environment property wrapper in combination with @Published was used to implement MVVM.</li>
 	        </ul>
 	      </div> 
 	    </div> 
@@ -498,13 +510,11 @@
         <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
 	  <h2>What I've Learned</h2>
           <p class="lead">
-             blablablaaa 
+             The most important thing I learned building this app is to work with coreData and to create a parent/child relationship.
+	     I also learned to combine coreData and the MVVM pattern in SwiftUI.
 	  </p>
 	  <p class="lead">
-             blablablaaa
-	  </p>
-	  <p class="lead">
-             blablablaaa
+             In addition, I also learned to work with emojis and all the native functionalities for the 'list' object in SwiftUI.
 	  </p>
         </div>
       </div>
@@ -519,8 +529,15 @@
 	    New Ideas / Improvements</h5>
 	  </div>
 	  <ul class="thin_header">
-	     <li><h6>blablablaaa</h6> blablablaaa</li>
-	     <li><h6>blabla</h6> baldieblaadieblaaaaa.</li>
+	     <li><h6>Cloudkit</h6> Implement cloudkit to share shops, so you can both edit articles.</li>
+	     <li><h6>Recipes</h6> Create recepis and then automatically add the needed articles to the shops.</li>
+	     <li><h6>Barcode Scanner</h6> Scan articles and automatically add them to a shop.</li>
+	     <li><h6>Siri</h6> Use Siri to quickly add articles to a store.</li>
+	     <li><h6>Premium Account</h6> Option to buy premium and stop seeing ads.</li>
+	     <li><h6>Shake Gesture</h6> Shake the device to undo the last action, for example if you accidentally deleted an article.</li>
+	     <li><h6>Multilingual</h6> Support multiple languages.</li>
+             <li><h6>Notifications</h6> If you are near a shop and you have selected items in that shop, notify the user.</li>
+	     <li><h6>Paths</h6> Let the user add paths in a shop, so the user can drag the articles to that specific path.</li>
 	  </ul>
         </div>  
       </div> 
