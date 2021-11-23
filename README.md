@@ -1,6 +1,6 @@
 # iOS Portfolio
 
-<img src="img/who-am-i/Gio.png" alt="Giordano Menegazzi" width="300" style="border-radius:10%">
+<kbd><img src="img/who-am-i/Gio.png" alt="Giordano Menegazzi" width="300"></kbd>
 
 ### 👋 Hello, I'm Giordano Menegazzi
 ###### iOS Developer - Engineer - YouTuber
