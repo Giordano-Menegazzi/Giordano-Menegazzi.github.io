@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta name="generator" content="Hugo 0.88.1" />
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+<script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=GTM-000000' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-000000');
+</script>
+
+
+<title></title>
+	
+	
+<!-- CSS Styles -->
+<style>
+    .rad-fade-in {
+        will-change: opacity, transform;
+        animation-name: rad-fade-in-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-fallback {
+        0% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .fonts-loaded .rad-fade-in.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+    }
+
+    .fonts-loaded .rad-fade-in.rad-animate {
+        animation-name: rad-fade-in;
+        animation-duration: 1.1s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+     
+    .rad-fade-in-long {
+        will-change: opacity, transform;
+        animation-name: rad-fade-in-long-fallback;
+        animation-duration: 8s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-long-fallback {
+        0% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .fonts-loaded .rad-fade-in-long.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+    }
+
+    .fonts-loaded .rad-fade-in-long.rad-animate {
+        animation-name: rad-fade-in-long;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-long {
+        0% {
+            opacity: 0;
+        }
+
+        20% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+     
+    .rad-fade-down {
+        will-change: opacity, transform;
+        animation-name: rad-fade-down-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        transform: translateY(-30px);
+    }
+
+    @keyframes rad-fade-down-fallback {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        75% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .fonts-loaded .rad-fade-down.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    .fonts-loaded .rad-fade-down.rad-animate {
+        animation-name: rad-fade-down;
+        animation-duration: 1.1s;
+    }
+
+    @keyframes rad-fade-down {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .rad-scale-down {
+        will-change: opacity, transform;
+        animation-name: rad-scale-down-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        transform-origin: 50% 0;
+    }
+
+    @keyframes rad-scale-down-fallback {
+        0% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        75% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+
+    .fonts-loaded .rad-scale-down.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+        transform: scaleY(0.95);
+    }
+
+    .fonts-loaded .rad-scale-down.rad-animate {
+        animation-name: rad-scale-down;
+        animation-duration: 1.1s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-scale-down {
+        0% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+	
+    @font-face {
+      font-family: sign-painter;
+      src: url(https://giordano-menegazzi.github.io/fonts/SignPainter/SignPainter-HouseScript.otf);
+    }
+	
+    .title {
+      margin-top: 80px;
+    }
+	
+    .title a:hover {
+      opacity: 0.5;   
+    }
+	
+    .title a:link {
+      text-decoration: none;
+    }
+
+    .title img {
+      vertical-align: middle;
+      width: 60px;
+    }
+
+    .title h1 {
+      display: inline;
+      margin-left: 20px;
+      vertical-align: middle;
+      font-size: 3em;
+      font-family: sign-painter;
+    }
+	
+    .rotate180 {
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
+      padding-left: 6px;
+    }
+	
+    a.back_btn {
+      padding-right: 25px;	    
+    }
+	
+    .download_btn {
+       width: 250px; 
+       margin-left: 20px;
+    }
+	
+    @media screen and (min-width: 991px) {   
+       div.footer_links_padding {
+         padding-left: 10px;
+       }
+	    
+       .title img {
+         width: 120px;
+       }
+	    
+       .title h1 {
+         font-size: 4em;
+       }
+    }
+	
+    a.btn-primary, a.btn-frameless {
+      border-radius: 500px;    
+    }
+	
+    a.btn-frameless {
+      border: 1px solid black;
+      margin-left: 10px;
+    }
+	
+    a.btn-frameless:hover {
+      background: #000;
+      color: #fff;
+    }
+	
+    #background {
+      margin-top: 30px;	    
+    }
+	
+    #skills {
+      margin-top: -50px;
+    }
+	
+    hr.seperator_bottom {
+      padding-top: 30px;
+      height: 2px;
+    }
+    
+    div.bottom_padding h2 {
+      padding-bottom: 30px;	    
+    }
+	
+    .list_header img {
+      margin-right: 5px;
+      width: 60px;
+    }
+	
+    ul.thin_header li h6 {
+      font-weight: 500;  
+      margin-bottom: 2px;
+    }
+	
+    div.list_top_padding {
+      margin-top: 25px;
+    }
+	
+    div.floating_box {
+      border-radius: 16px;
+      box-shadow: 3px 3px 3px #999;
+      padding: 15px;
+      border: 1px solid #999;
+      text-align: left;
+    }
+	
+    .footer_links a {
+      color: white; 
+      background-color: transparent; 
+      text-decoration: none;
+    }
+	
+    .footer_links a:hover {
+      transform: scale(1.2);
+      color: red;
+    }
+</style>
+	
+
+
+
+<link rel="stylesheet" href="https://giordano-menegazzi.github.io/css/main.css"/>
+<link rel="stylesheet" href="https://giordano-menegazzi.github.io/css/rad-icons.css"/>
+<link rel="stylesheet" href="https://giordano-menegazzi.github.io/css/custom.css"/>
+    
+
+<!-- Header section -->
+</head>
+<body>
+<header class="header fixed-top rad-animation-group" id="header">
+  <div class="container rad-fade-in">
+    <nav class="navbar navbar-expand-lg navbar-light p-0">
+      <a class="navbar-brand" href="https://giordano-menegazzi.github.io/">
+        <span>iOS Portfolio</span>
+        <span>G. Menegazzi</span>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent, #header"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-lg-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://giordano-menegazzi.github.io/#etca">HOME</a>
+          </li>  
+		
+	  <li class="nav-item">
+            <a data-scroll class="nav-link" href="#background">BACKGROUND</a>
+          </li>
+		
+	  <li class="nav-item">
+            <a data-scroll class="nav-link" href="#focalPoints">FOCAL POINTS</a>
+          </li>
+		
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#learned">WHAT I'VE LEARNED</a>
+          </li>
+		
+	  <li class="nav-item">
+            <a data-scroll class="nav-link" href="#future">FUTURE FEATURES</a>
+          </li>
+		
+	  <li class="nav-item">
+            <a data-scroll class="nav-link" href="#download">DOWNLOAD</a>
+          </li>
+		
+	  <li class="nav-item">
+            <a data-scroll class="nav-link" href="https://giordano-menegazzi.github.io/#footer">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+	
+	
+	
+<!-- Background section -->
+<section class="section section--border-bottom" id="background">
+  <div class="container">  
+    <!-- Title -->
+    <center class="rad-animation-group rad-fade-down title">
+      <a href="https://apps.apple.com/nl/app/etc-app/id1464144641?l=en">
+        <img src="https://giordano-menegazzi.github.io/img/App-Logos/ETCA/App-Logo-ETCA-512.png" 
+        alt="Cryptofy icon">
+        <h1>Cryptofy App</h1>
+      </a>
+    </center>
+	
+    <div class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row">
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h2>Background</h2>
+	  <p class="lead">
+	     This was the very first iOS app I created and uploaded to the App Store. The app also figured as my graduation assignment for the B.S. 
+	     Automotive Engineering at <a href="https://www.han.nl/opleidingen/hbo/automotive/deeltijd/">HAN</a> University of Applied Sciences in Arnhem.
+	  </p>
+	  <p class="lead">
+	     The idea for this app was to create the <strong>'Swiss pocket knife'</strong> for every car mechanic in name of the automotive Helpdesk
+	     <a href="https://eurotechcenter.eu/en/">EuroTech Center</a>.
+	  </p>
+	  <p class="lead">
+	     The app consists of several smaller standalone apps that we call <strong>'App Tools'</strong>. These App Tools range from case-specific calculators,
+             such as the VE-MAF and Ohms Law Calculators to custom QR code scanners.
+	  </p>
+      </div>
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+         <img
+           class='lozad img-responsive'
+           src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+           data-src="https://giordano-menegazzi.github.io/img/works/ETCA/ETCA-screenshots.png"
+           data-srcset="https://giordano-menegazzi.github.io/img/works/ETCA/ETCA-screenshots.png 1x, 
+			https://giordano-menegazzi.github.io/img/works/ETCA/ETCA-screenshots.png 2x"
+           alt="ETCA Screenshots"
+         /> 
+      </div>
+    </div>
+  </div>
+</section>
+	
+	
+	
+<!-- Focal Points section -->
+<section class="section section--border-bottom" id="focalPoints">
+  <div class="container">
+      <div class="row row--padded rad-animation-group rad-fade-down">
+	<div class="col-12">
+	  <h2>Focal Points</h2>
+	  <div class="row pt-2 pt-md-4">
+	    <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+	      <div class="floating_box">
+		<div class="list_header"> 
+		  <h5><img src="https://giordano-menegazzi.github.io/img/skills/programming_icon.png" alt="Programming icon">
+		  App Requirements</h5>
+		</div>
+		<ul class="thin_header">
+		   <li><h6>Basic Structure</h6> The app is built on a custom, reactive 'basic structure' that allows for easily implementation and updating 
+			   several smaller standalone apps called 'App Tools'.</li>
+		   <li><h6>Scalable</h6> The app automatically scales to any iPhone and iPad using AutoLayout.</li>
+		   <li><h6>Reusable</h6> Used the 'DRY' principle and inheritance to make every view and component reusable.</li>
+		   <li><h6>Hexadecimal Keyboard</h6> Created a custom hexadecimal input view for the native keyboard, using the original color and sounds.</li>
+		   <li><h6>Dark Mode Support</h6> At the time, dark mode became available on iPhone and iPad, so it was necessary to support both.</li>
+		   <li><h6>User Profile</h6> The user can create a simple 'user profile' consisting of a name and image.</li>
+		   <li><h6>Store App history</h6> Each App Tool can store at least 10 of its calculated values.</li>
+		   <li><h6>Slide-in Menu</h6> The user can access the custom slide-in menu from anywhere in the app.</li>
+		   <li><h6>Version-control</h6> GitHub was used for version-control.</li>
+		</ul>
+	      </div>   
+	    </div>
+		  
+	    <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+	      <div class="floating_box">
+		<div class="list_header">
+		  <h5><img src="https://giordano-menegazzi.github.io/img/skills/swift_framework_icon.png" alt="Software icon">
+		  Used Frameworks</h5>
+		</div>
+	        <ul class="thin_header">
+		   <li><h6>SwiftUI</h6> 100% programmatically designed with SwiftUI.</li>
+		   <li><h6>Combine</h6> Network calls with publishers and subscribers.</li>
+		   <li><h6>AVFoundation</h6> Created a custom 2D and 3D code scanner to scan barcodes, QR codes and Data matrixes.</li>
+		   <li><h6>RxSwift</h6> Experimented with this framework to make the app more reactive.</li>
+		   <li><h6>CoreTelephony</h6> Enabeled the users to directly call the helpdesk 'EuroTech center'.</li>
+		   <li><h6>SafariServices</h6> Allowing the user to perform a 'Google search' directly from the P-code app tool.</li>
+	        </ul>
+	      </div> 
+	    </div> 
+          </div>
+        </div>   
+      </div>
+      <hr class="seperator_bottom">
+	  
+      <!-- What I've learned section -->
+      <div class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row" id="learned">
+        <div class="col-12 col-md-7 pl-md-0 text-right">
+          <img
+	    class='lozad img-responsive'
+            src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+            data-src="https://giordano-menegazzi.github.io/img/works/ETCA/ETCA-Screenshots2.png"
+            data-srcset="https://giordano-menegazzi.github.io/img/works/ETCA/ETCA-Screenshots2.png 1x, 
+			 https://giordano-menegazzi.github.io/img/works/ETCA/ETCA-Screenshots2.png 2x"
+            alt="ETCA Screenshots"
+          />
+        </div>
+        <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+	  <h2>What I've Learned</h2>
+          <p class="lead">
+             I learned to use AutoLayout programmatically and build apps with UIKit. This app is basically made up of several standalone apps, 
+	     so I learned to build a layout that accommodates all of these standalone apps and can be easily updated/extended in the future. 
+	  </p>
+	  <p class="lead">
+             I also learned to build the app with the best user experience in mind, meaning I only enable certain functionalities based on the data filled in.
+             For example, do not allow the user to calculate in the calculators until all data is entered, show corresponding error messages 
+	     and additionally use animations when values change.
+	  </p>
+	  <p class="lead">
+             Since this was the first app I made, it was also the first app I uploaded to the App Store. So I learned how to archive and upload
+             the app for review and also show it in the App Store afterwards.
+	  </p>
+        </div>
+      </div>
+      <hr class="seperator_bottom">
+	  
+      <!-- Future Features section -->
+      <div class="bottom_padding rad-animation-group rad-fade-down" id="future">
+        <h2>Future Features</h2>
+        <div class="floating_box">
+	  <div class="list_header"> 
+	    <h5><img src="https://giordano-menegazzi.github.io/img/skills/future-idea-icon.png" alt="Future idea icon">
+	    New Ideas / Improvements</h5>
+	  </div>
+	  <ul class="thin_header">
+	     <li><h6>SwiftUI</h6> Update the app to use SwiftUI instead of UIKit to be more <strong>'future proof'</strong>.</li>
+	     <li><h6>CoreData</h6> The app currently just uses UserDefaults to store anything.</li>
+             <li><h6>Push Notifications</h6> Informing users about new features and news from the Eurotech Center.</li>
+	     <li><h6>macOS</h6> Adapt the app to work on macOS for internal usage of EuroTech center.</li>  
+	  </ul>
+        </div>  
+      </div> 
+    </div>
+</section>
+
+
+
+<!-- Download section -->  
+<section class="section section--border-bottom rad-animation-group" id="download">
+    <div class="container">
+      <div class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row">
+        <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto bottom_padding">
+	  <h2>Download</h2>
+	  <p class="lead">
+	     Scan the QR code to download the app.  
+	  </p>
+	  <p class="lead">
+	     Alternatively you can search the App store for <strong>'Cryptofy'</strong> or use the button below.  
+	  </p>
+	  <a href="https://apps.apple.com/nl/app/etc-app/id1464144641?l=en" class="download_btn">
+	     <img src="https://giordano-menegazzi.github.io/img/general/black.svg"
+	     onmouseover="this.src='https://giordano-menegazzi.github.io/img/general/white.svg'"
+	     onmouseout="this.src='https://giordano-menegazzi.github.io/img/general/black.svg'"
+	     alt="Mi Shopping List Download Btn">
+	  </a> 
+        </div>
+        <div class="col-12 col-md-7 pl-md-0">
+	  <center>
+	    <img
+	       class='lozad img-responsive'
+	       src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+	       data-src="https://giordano-menegazzi.github.io/img/QR-Codes/qr-code-ETCA.jpg"
+	       data-srcset="https://giordano-menegazzi.github.io/img/QR-Codes/qr-code-ETCA.jpg 1x, 
+			    https://giordano-menegazzi.github.io/img/QR-Codes/qr-code-ETCA.jpg 2x"
+	       alt="ETCA Download QR code"
+	     /> 
+          </center>
+        </div>
+      </div>
+	    
+      <!-- Download & Back button -->
+      <div class="container rad-animation-group rad-fade-down">
+        <div class="row flex-column-reverse flex-md-row rad-fade-down">
+          <div class="col-12 col-sm-6 mt-5 mt-sm-0">
+	    <a href="https://giordano-menegazzi.github.io/#etca" class="btn btn-primary back_btn">
+	       <i class="icon-arrow-right rotate180"></i>
+	       BACK
+	    </a>
+          </div>   
+        </div>
+      </div>
+    </div>
+</section>
+
+	
+	
+<!-- Footer section -->
+<footer class="footer" id="footer">
+  <!-- First layer Social links -->
+  <div class="container">
+     <div class="footer__left footer_links_padding">
+       <div class="row pt-2">
+         <div class="row platform-links">
+	   <div class="col-12 footer_links"> 
+	      <a href="https://nl.linkedin.com/in/giordano-menegazzi-35108012a" target="_blank">
+		 <i class="icon-linkedin-line"></i>
+	      </a>
+
+	      <a href="https://github.com/Giordano-Menegazzi" target="_blank">
+		 <i class="icon-github-line"></i>
+	      </a>
+
+	      <a href="https://www.youtube.com/channel/UC-_X1GCGP54lD-9MUY4e2Nw" target="_blank">
+		 <i class="icon-youtube-line"></i>
+	      </a>
+
+	      <a href="https://www.instagram.com/hannis.engineering/" target="_blank">
+		 <i class="icon-instagram-line"></i>
+	      </a>
+
+	      <a href="https://www.facebook.com/people/Hannis-Engineering/100063502239810/" target="_blank">
+		 <i class="icon-facebook-line"></i>
+	      </a>
+	    </div>
+	  </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Second footer layer -->
+  <div class="container">	  
+    <div class="footer__left">		    
+      <div class="footer__copy">
+        © Hanni&#39;s Engineering. All rights reserved.
+      </div>
+    </div>
+
+    <div class="footer__links">
+      <ul class="navbar-nav ">	      
+	<li class="nav-item footer_links">
+           <a class="nav-link" href="https://giordano-menegazzi.github.io/#about">HOME</a>
+        </li>
+	      
+	<li class="nav-item footer_links">
+           <a data-scroll class="nav-link" href="#header">ETCA</a>
+        </li>   
+      </ul>
+    </div>
+	  
+    <div class="footer__right footer_links">
+      <a href="https://www.youtube.com/channel/UC-_X1GCGP54lD-9MUY4e2Nw">
+        <img
+	   src="https://giordano-menegazzi.github.io/img/footer/Logo-Outlines-White.png"
+	   srcset="https://giordano-menegazzi.github.io/img/footer/Logo-Outlines-White.png 1x, 
+		   https://giordano-menegazzi.github.io/img/footer/Logo-Outlines-White@2x.png 2x"
+	   alt=""
+       /></a>
+    </div> 
+	  
+  </div>
+</footer>
+	
+
+
+<!-- Scripts -->
+<script src='https://giordano-menegazzi.github.io/js/rad-animations.js'></script>
+<script src='https://giordano-menegazzi.github.io/js/library/lozad.min.js'></script>
+<script>
+  window.addEventListener("load", function() {
+    var observer = window.lozad(".lozad", {
+      rootMargin: window.innerHeight / 2 + "px 0px",
+      threshold: 0.01
+    }); 
+    observer.observe();
+  });
+</script>
+<script src='https://giordano-menegazzi.github.io/js/library/jquery-3.3.1.slim.min.js'></script>
+<script src='https://giordano-menegazzi.github.io/js/library/bootstrap.min.js'></script>
+<script src='https://giordano-menegazzi.github.io/js/sticky-header.js'></script>
+<script src='https://giordano-menegazzi.github.io/js/library/smooth-scroll.polyfills.min.js'></script>
+<script src='https://giordano-menegazzi.github.io/js/library/fontfaceobserver.js'></script>
+<script>
+  (function(w) {
+    
+    if (w.document.documentElement.className.indexOf("fonts-loaded") > -1) {
+      return;
+    }
+    var fontA = new w.FontFaceObserver("Inter", {
+      weight: 300
+    });
+    var fontB = new w.FontFaceObserver("Inter", {
+      weight: 400
+    });
+    var fontC = new w.FontFaceObserver("Inter", {
+      weight: 500
+    });
+    var fontD = new w.FontFaceObserver("Inter", {
+      weight: 600
+    });
+    var fontE = new w.FontFaceObserver("Inter", {
+      weight: 700
+    });
+    var fontF = new w.FontFaceObserver("Inter", {
+      weight: 900
+    });
+    w.Promise.all([fontA.load(), fontC.load(), fontF.load()]).then(function() {
+      w.document.documentElement.className += " fonts-loaded";
+    });
+  })(this);
+</script>
+<script>
+  const scroll = new SmoothScroll('a[href*="#"]');
+    $('a.nav-link').on('click', () => {
+      const navbar = $('.navbar-collapse');
+      if (navbar && navbar.hasClass('show')) {
+        $('.navbar-toggler').click();
+      }
+    })
+</script>
+</body>
+</html>
