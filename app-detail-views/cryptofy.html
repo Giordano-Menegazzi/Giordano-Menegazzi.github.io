@@ -425,12 +425,12 @@
       <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
         <h2>Background</h2>
 	  <p class="lead">
-	     I wanted a simple and secure crypto portfolio app to easily see my total portfolio value in USD and EUR.
-	     But after using several iOS apps, I came to the conclusion that most of the apps are too complicated.
+	     This is the momentarily my most up to date app. I wanted to create a secure crypto portfolio app to easily see my total portfolio value in USD and EUR.
+	     But after using several iOS apps, I came to the conclusion that most of the apps are way too complicated with an overload of irrelevant information.
 	  </p>
 	  <p class="lead">  
-	     So I decided to take matters into my own hands and create my own basic crypto portfolio app.
-	     That just pulls the current prices from a free API call and then uses that price to calculate your portfolio value.
+	     So I decided to take matters into my own hands and create my own crypto portfolio app.
+	     That just pulls the current prices from CoinGecko and then uses that price to calculate your portfolio value, which is stored in SwiftData (on device) and synced through CloudKit.
 	  </p>
 	  <p class="lead">
 	     The app isn't connected to any crypto wallet, so it is completely fictitious and safe to use.
@@ -468,12 +468,14 @@
 		  App Requirements</h5>
 		</div>
 		<ul class="thin_header">
-		   <li><h6>CoreData</h6> The app uses coreData to store the users portfolio values.</li>
-		   <li><h6>CoinGecko API</h6> The cryptocurrency data used in this app comes from the free coinGecko API.</li>
+		   <li><h6>SwiftData</h6> The app uses SwiftData to store the users portfolio values.</li>
+		   <li><h6>CloudKit</h6> The app uses CloudKit to sync the users portfolio with other devices.</li>
+		   <li><h6>CoinGecko API</h6> The cryptocurrency data used in this app comes from the CoinGecko API.</li>
+		   <li><h6>StoreKit 2</h6> The user can buy an monthly or yearly PRO subscription.</li>
 		   <li><h6>Slide-in menu</h6> The user can access the custom slide-in menu from anywhere in the app.</li>
-		   <li><h6>BottomSheet</h6> A reusable, interactive and intrinsic bottom sheet.</li>
-		   <li><h6>Multiple currencies</h6> The app can show three different currencies. USD, EUR and GBP.</li>
-		   <li><h6>Alternate App Icons</h6> The user can set alternate app Icons.</li>
+		   <li><h6>Multiple currencies</h6> The app can show multiple different currencies.</li>
+		   <li><h6>Data Visualization</h6> The user can see they're data visualized in graphs.</li>
+		   <li><h6>Exit strategy</h6> An tool to calculate the best personalized exit strategy.</li>
 		   <li><h6>Version-control</h6> GitHub was used for version-control.</li>
 		</ul>
 	      </div>   
@@ -487,7 +489,10 @@
 		</div>
 	        <ul class="thin_header">
 		   <li><h6>SwiftUI</h6> 100% programmatically designed with SwiftUI.</li>
+		   <li><h6>SwiftData</h6> Data storage on device.</li>
+		   <li><h6>StoreKit</h6> Subscription management.</li>
 		   <li><h6>Combine</h6> Network calls with publishers and subscribers.</li>
+		   <li><h6>SwiftFullRouting</h6> A third party framework to programmatically route through different screens.</li>
 	        </ul>
 	      </div> 
 	    </div> 
@@ -511,7 +516,11 @@
         <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
 	  <h2>What I've Learned</h2>
           <p class="lead">
-             I've learned to use the combine framework and pull, save and update API data automatically, using publishers and subscribers. 
+             I've learned to use the combine framework and pull, save and update API data automatically, using publishers and subscribers.
+	     I also learned to use SwiftData, which is very easy to use at first, but as you extend models and relationships and do a lot of asynchronous work, you quickly hit a steep learning curve!
+	  </p>
+	  <p class="lead">
+             Next to that I learned to use StoreKit 2 to manage multiple subscriptions, and with that comes ASO (AppStore Search Optiomization) to actually rank higher in the app searches and get more downloads. 
 	  </p>
 	  <p class="lead">
              In addition, I learned to use @GestureState to interactively swipe content across the screen. 
@@ -531,8 +540,8 @@
 	  </div>
 	  <ul class="thin_header">
 	     <li><h6>Widget</h6> Create a widget for the app to show your live portfolio values.</li>
-	     <li><h6>Login</h6> Login with biometrics (FaceID/TouchID) or with password.</li> 
-	     <li><h6>CloudKit</h6> Implement cloudKit to sync portfolio on multiple devices.</li> 
+	     <li><h6>Tools</h6> Implement more useful tools to help make good decisions.</li> 
+	     <li><h6>Data visualization</h6> Implement more graphs to easily see more data.</li> 
 	  </ul>
         </div>  
       </div> 
@@ -551,7 +560,7 @@
 	     Scan the QR code to download the app.  
 	  </p>
 	  <p class="lead">
-	     Alternatively you can search the App store for <strong>'Cryptofy'</strong> or use the button below.  
+	     Alternatively you can search the AppStore for <strong>'Cryptofy'</strong> or use the button below.  
 	  </p>
 	  <a href="https://apps.apple.com/nl/app/cryptofy/id1605495214?platform=iphone" class="download_btn">
 	     <img src="https://giordano-menegazzi.github.io/img/general/black.svg"
@@ -601,19 +610,15 @@
 	      <a href="https://nl.linkedin.com/in/giordano-menegazzi-35108012a" target="_blank">
 		 <i class="icon-linkedin-line"></i>
 	      </a>
-
 	      <a href="https://github.com/Giordano-Menegazzi" target="_blank">
 		 <i class="icon-github-line"></i>
 	      </a>
-
 	      <a href="https://www.youtube.com/channel/UC-_X1GCGP54lD-9MUY4e2Nw" target="_blank">
 		 <i class="icon-youtube-line"></i>
 	      </a>
-
 	      <a href="https://www.instagram.com/hannis.engineering/" target="_blank">
 		 <i class="icon-instagram-line"></i>
 	      </a>
-
 	      <a href="https://www.facebook.com/people/Hannis-Engineering/100063502239810/" target="_blank">
 		 <i class="icon-facebook-line"></i>
 	      </a>
